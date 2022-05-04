@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Navbar } from "../Components/Navbar/Navbar";
 // import CartPage from "../components/CartPage/CartPage";
 // import { Error } from "../components/Error";
-// import { HomePage } from "../components/homepage/HomePage";
+import { HomePage } from "../Components/homepage/HomePage";
 // import { Champions } from "../components/Champions";
 // import { Login } from "../components/Login";
 // import { Register } from "../components/Register";
@@ -16,7 +16,7 @@ export function Rout() {
         <Routes>
             <Route path="/" exact>
                 <Navbar />
-                {/* <HomePage /> */}
+                <HomePage />
                 {/* <Footer /> */}
             </Route>
 
