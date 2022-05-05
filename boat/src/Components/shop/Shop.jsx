@@ -16,7 +16,7 @@ const Shop = () => {
 
   return (
   <>
-      
+     
       <div className={Styles.con}>
       <img className={Styles.imgpic} src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Catgry-web_7cf20899-eb4a-427f-9a8a-799d7e1c37fa.jpg?v=1634716734" alt="" />
       <div className={Styles.topleft}>Home/ Wireless Earbuds</div>
@@ -31,7 +31,7 @@ const Shop = () => {
          return (
            <div key={index} className={Styles.innercon}>
                <div>
-               <img src={product.image} alt="" />
+               <img className={Styles.size} src={product.image} alt="" />
                </div>
                <div className={Styles.smallcon}>
 
