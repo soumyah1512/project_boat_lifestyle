@@ -36,7 +36,8 @@ const NavbarContainre = styled.div`
     }
 
     & > div:nth-child(2) {
-        width: 390px;
+        width: 130px;
+        padding: 0 130px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -76,7 +77,7 @@ const NavbarContainre = styled.div`
             right: -15px;
         }
 
-        > span:nth-child(4)::after {
+        > span:nth-child(2)::after {
             display: none;
         }
 
@@ -136,7 +137,9 @@ const SearchBox = styled.div`
     input {
         border: none;
     }
-
+    input:focus{
+        outline:none;
+    }
     input ~ .search-results {
         position: fixed;
         width: 235px;
@@ -183,12 +186,12 @@ export const Navbar = () => {
                         Shop <img src={downArrowIcon} alt="arrow-Icon" />
                         <Collection className="navbar-collection" />
                     </span>
-                    <span>Pro It Up</span>
+                    {/* <span>Pro It Up</span>
                     <span>
                         <Link to="/pages/sound-of-champions">
                             Sound of Champions
                         </Link>{" "}
-                    </span>
+                    </span> */}
                     <span>
                         More <img src={downArrowIcon} alt="arrow-Icon" />
                     </span>
