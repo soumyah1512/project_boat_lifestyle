@@ -265,13 +265,10 @@ const ProductsArray =[
     id: 30,
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255-pro-make-in-india_600x.png?v=1613457340",
-<<<<<<< HEAD
     title: "Rockerz 255 Pro Made in India",
     price:  1399,
-=======
     title: "Rockerz 255 Pro .....",
-    price: " 1399",
->>>>>>> 24d511ff97f0566e9fab3743e9cd91e992e1ca2a
+    price: 1399,
     mrp: " 3499",
     color: "1 colors available",
   },
@@ -333,13 +330,10 @@ const ProductsArray =[
     id: 37,
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ed46e58c-9643-43e0-b350-9539d293aa51_79c7195d-2e5a-4b7d-8b19-328bef56032c_600x.png?v=1628594175",
-<<<<<<< HEAD
     title: "BOAT Rockerz 235 v2 Made in India",
     price:  1199,
-=======
     title: "BOAT Rockerz 235 v2 ....",
     price: " 1199",
->>>>>>> 24d511ff97f0566e9fab3743e9cd91e992e1ca2a
     mrp: " 2990",
     color: "1 colors available",
   },
@@ -437,13 +431,10 @@ const ProductsArray =[
     id: 48,
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/450im_600x.png?v=1639990280",
-<<<<<<< HEAD
     title: "Rockerz 450 - Iron Man Marvel Edition",
     price:  1999,
-=======
     title: "Rockerz 450 - Iron Man ...",
-    price: " 1999",
->>>>>>> 24d511ff97f0566e9fab3743e9cd91e992e1ca2a
+    price:  1999,
     mrp: " 3990",
     color: "1 colors available",
   },
@@ -451,13 +442,10 @@ const ProductsArray =[
     id: 49,
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_477b0686-02b2-4289-9e53-d663dfb08e37_600x.png?v=1645016541",
-<<<<<<< HEAD
     title: "boAt Rockerz 550 Sunburn Edition",
     price:  1999,
-=======
     title: "boAt Rockerz 550...",
-    price: " 1999",
->>>>>>> 24d511ff97f0566e9fab3743e9cd91e992e1ca2a
+    price:  1999,
     mrp: " 4999",
     color: "3 colors available",
   },
@@ -465,13 +453,10 @@ const ProductsArray =[
     id: 50,
     image:
       "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/450ca_600x.png?v=1639990534",
-<<<<<<< HEAD
     title: "Rockerz 450 - Captain America Marvel Edition",
     price:  1999,
-=======
     title: "Captain America Marvel ",
-    price: " 1999",
->>>>>>> 24d511ff97f0566e9fab3743e9cd91e992e1ca2a
+    price: 1999,
     mrp: " 3990",
     color: "3 colors available",
   },
