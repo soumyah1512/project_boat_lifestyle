@@ -106,9 +106,9 @@ export const Collection = () => {
         <span className="navbar-collection">
             <ImgContainer>
                 {collectionOptinArray.map(({ routeLink, coverImgUrl, alt }) => (
-                    <Link to={routeLink}>
-                        <img src={coverImgUrl} alt={alt} />
-                    </Link>
+                    <Link to="/collections/true-wireless-earbuds">
+                    <img src={coverImgUrl} alt={alt} />
+                </Link>
                 ))}
             </ImgContainer>
         </span>

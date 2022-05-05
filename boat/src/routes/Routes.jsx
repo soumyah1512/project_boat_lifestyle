@@ -10,6 +10,7 @@ import { HomePage } from "../Components/homepage/HomePage";
 // import ProductPage from "../components/ProductPage/ProductPage";
 // import { Collections } from "../components/Collections";
 // // import { Success } from "../components/Success";
+import Cart from "../Components/cart/Cart";
 
 export function Rout() {
     return (
@@ -46,7 +47,7 @@ export function Rout() {
 
             <Route path="/cart">
                 <Navbar />
-                {/* <CartPage /> */}
+                <Cart/>
             </Route>
 
             <Route exact path="/successful">
