@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+
 const collectionOptinArray = [
     {
         routeLink: "/collections/true-wireless-earbuds",
@@ -105,8 +106,8 @@ export const Collection = () => {
     return (
         <span className="navbar-collection">
             <ImgContainer>
-                {collectionOptinArray.map(({ routeLink, coverImgUrl, alt }) => (
-                    <Link to="/collections/true-wireless-earbuds">
+                {collectionOptinArray.map(({ routeLink, coverImgUrl, alt },index) => (
+                    <Link to="/shop" key={index}>
                     <img src={coverImgUrl} alt={alt} />
                 </Link>
                 ))}

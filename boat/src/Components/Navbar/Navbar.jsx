@@ -19,8 +19,8 @@ const NavbarContainre = styled.div`
     top: 0;
     width: 100%;
     height: 88px;
-    background: black;           //var(--black)
-    color: white;                     //var(--white)
+    background: black;           
+    color: white;                     
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -175,7 +175,7 @@ export const Navbar = () => {
     return (
         <>
         {/* <h1>asdfa</h1> */}
-            <NavbarContainre flag={flag}>
+            <NavbarContainre>
                 <div className="boat-logo">
                     <Link to="/">
                         <img src={logo} alt="Logo" />

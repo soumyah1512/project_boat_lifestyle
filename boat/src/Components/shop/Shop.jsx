@@ -9,12 +9,17 @@ import { Navbar } from '../Navbar/Navbar'
 const Shop = () => {
 
   const{addItem}= useCart();
+  // const addItem = useCart() => {
+  //   console.log("abc");
+  // }
 
 
  
 
   return (
-    <>
+  <>
+  
+  
     <Navbar />
     <div className={Styles.con}>
       <img className={Styles.imgpic} src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Catgry-web_7cf20899-eb4a-427f-9a8a-799d7e1c37fa.jpg?v=1634716734" alt="" />
@@ -35,6 +40,8 @@ const Shop = () => {
        
       <div className={Styles.innercon}>
         <span key={index}></span>
+      <div key={index}>
+        <span ></span>
         <div>
         <img src={product.image} alt="" />
         </div>
@@ -97,6 +104,7 @@ const Shop = () => {
 </div>
 <Footer />
   </>
+  
   )
 }
 
