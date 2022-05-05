@@ -9,13 +9,17 @@
 }
 
 .innercon{
-    border:  1px solid black;
+    border:  1px solid rgb(143, 14, 14);
     border-radius: 10px;
     background-color:gainsboro;
-    margin-top: 0%;
+    margin-top: 0;
+    /* width:400px; */
 
 }
-
+.size{
+    width:300px
+    
+}
 .imgpic{
     height: 400px;
     width: 100%;
