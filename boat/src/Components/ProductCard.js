@@ -12,7 +12,7 @@ const CardContainer = styled.div`
 const InnerImgContainer = styled.div`
     width: 400px;
     height: 232px;
-    background: var(--gray);
+    background: grey;
     overflow: hidden;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -36,7 +36,7 @@ const CardData = styled.div`
     width: 400px;
     height: 139px;
     position: relative;
-    background: var(--white);
+    background: white;
     border: 1px solid transparent;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -49,7 +49,7 @@ const CardData = styled.div`
     }
 
     & > .product-price {
-        color: var(--red);
+        color: red;
         margin: auto 6px 9px 18px;
         font-weight: 400;
         font-size: 14px;
@@ -57,7 +57,7 @@ const CardData = styled.div`
     }
 
     & > .product-original-price {
-        color: var(--light-gray);
+        color: grey;
         display: inline;
         text-decoration-line: line-through;
         font-weight: 400;
@@ -83,7 +83,7 @@ const CardData = styled.div`
             top: 50%;
             width: 4px;
             height: 4px;
-            background: var(--red);
+            background: red;
         }
     }
 
@@ -115,17 +115,17 @@ const CardShopNowButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--black);
+    background: grey;
     transition: all 0.2s ease;
 
     & > span {
         transform: translateY(-1px);
         letter-spacing: 1px;
-        color: var(--white);
+        color: white;
     }
 
     &:hover {
-        background: var(--red);
+        background: red;
     }
 `;
 
