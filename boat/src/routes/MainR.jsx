@@ -6,21 +6,22 @@ import { Navbar } from '../Components/Navbar/Navbar'
 import Cart from '../Components/cart/Cart'
 import { Login } from '../Components/Login'
 import { Register } from '../Components/Register'
+import Shop from '../Components/shop/Shop'
+import { CartProvider } from 'react-use-cart'
 
 const MainR = () => {
   return (
-    <>
+    <><CartProvider>
         <Navbar/>
         <Routes>
-            <Route path="/" element={
-            <><HomePage/><Footer/></>}/>
-            <Route path="/account/login" element={
-                <><Login/><Footer/></>}/>
-            <Route path="/account/register" element={
-                <><Register/><Footer/></>}/>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/account/login" element={<Login/>}/>
+            <Route path="/account/register" element={<Register/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/shop" element={<Shop/>}/>
         </Routes>
-        
+        <Footer/>
+        </CartProvider>
     </>
   )
 }

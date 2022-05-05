@@ -8,6 +8,9 @@ import ProductsArray from "../../ProductData/Productdata"
 const Shop = () => {
 
   const{addItem}= useCart();
+  // const addItem = useCart() => {
+  //   console.log("abc");
+  // }
 
 
  
@@ -19,8 +22,8 @@ const Shop = () => {
     {ProductsArray.map((product, index)=>{
     
        return(
-      <div>
-        <span key={index}></span>
+      <div key={index}>
+        <span ></span>
         <div>
         <img src={product.image} alt="" />
         </div>
