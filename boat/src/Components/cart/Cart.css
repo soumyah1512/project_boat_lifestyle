@@ -126,6 +126,8 @@ background: rgb(24, 24, 112);
     text-align: center;
     color: rgb(240, 16, 16);
     background: rgba(255, 255, 0, 0.664);
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 .paymentSection{
     margin-top: 2%;
