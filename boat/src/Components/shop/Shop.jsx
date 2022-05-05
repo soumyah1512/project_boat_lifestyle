@@ -1,89 +1,78 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
 import ProductsArray from "../../ProductData/Productdata"
-import { Footer } from '../Footer'
+// import { Footer } from '../Footer'
 import Styles from './Shop.module.css'
-import { Navbar } from '../Navbar/Navbar'
+// import { Navbar } from '../Navbar/Navbar'
 
 
 const Shop = () => {
 
   const{addItem}= useCart();
-  // const addItem = useCart() => {
-  //   console.log("abc");
-  // }
-
+  
+  
 
  
 
   return (
   <>
-  
-  
-    <Navbar />
-    <div className={Styles.con}>
+      
+      <div className={Styles.con}>
       <img className={Styles.imgpic} src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Catgry-web_7cf20899-eb4a-427f-9a8a-799d7e1c37fa.jpg?v=1634716734" alt="" />
       <div className={Styles.topleft}>Home/ Wireless Earbuds</div>
-    </div>
+      </div>
    
+
     <div className={Styles.midshops}>
     <h1 className={Styles.midshop}>Wireless Earbuds</h1>
-    {/* </div> */}
-    {/* <div>Shop</div> */}
-    
     <div className={Styles.container} >
-    {ProductsArray.map((product, index)=>{
-    
-       return(
-       
 
-       
-      <div className={Styles.innercon}>
-        <span key={index}></span>
-      <div key={index}>
-        <span ></span>
-        <div>
-        <img src={product.image} alt="" />
-        </div>
+       {ProductsArray.map((product,index)=>{
+         return (
+           <div key={index} className={Styles.innercon}>
+               <div>
+               <img src={product.image} alt="" />
+               </div>
+               <div className={Styles.smallcon}>
 
-        <div className={Styles.smallcon}>
-        
-        <div >
-        <h3>{product.title}</h3>
-        </div>
+               <div >
+                  <h3>{product.title}</h3>
+               </div>
+                <div className={Styles.flexf}>
+                
+                <div className={Styles.flexff}>
+               <div>
+                <p style={{color:'red', fontWeight:'650'}}>₹ {product.price}</p>
+               </div>
 
-        <div className={Styles.flexf}>
+               <div >
+                <p >₹ <s>{product.mrp}</s></p>
+              </div>
 
-        <div className={Styles.flexff}>
+                </div>
 
-        <div>
-        <p style={{color:'red', fontWeight:'650'}}>₹ {product.price}</p>
-        </div>
-        <div >
-        <p >₹ <s>{product.mrp}</s></p>
-        </div>
-        </div>
+              <div>
+               <button className={Styles.adata} onClick={()=>addItem(product)}>ADD +</button>
+              </div>
+                </div>
 
-        <div>
-        <button className={Styles.adata} onClick={()=>addItem(product)}>ADD +</button>
-        </div>
-        
-        </div>
-        <div>
-        <p >{product.color}</p>
-        </div>
+              <div>
+              <p >{product.color}</p>
+              </div>
 
-        </div>
+           </div>
+               </div>
 
-        
-      </div>
-      
-     )
-      
-})}
-</div>
-<h1 style={{color:'white', marginLeft:'200px'}}>Airdopes - The Top Rated Bluetooth Earbuds in the Market</h1>
-<div className={Styles.datadd}>
+
+)
+
+})
+
+}
+
+    </div>
+    <h1 style={{color:'white', marginLeft:'200px'}}>Airdopes - The Top Rated Bluetooth Earbuds in the Market</h1>
+    <div className={Styles.datadd}>
 
 <p>Airdopes offer the most incredible listening experience with revolutionary design. Truly in ear wireless with no cables, no connectors, and no hassles. Designed for comfort and unstoppable music, always remain on your toes as Airdopes brings to you the dopest tech there is out there!</p>
 <p>Powered with boAt’s Insta Wake n’ Pair™ technology & ASAP™ Fast Charge, these true wireless earbuds power on and connect instantly right out of the charging case. No more going into settings to find and pair the device, welcome to the new era of seamless, instant connection. </p>
@@ -97,15 +86,16 @@ const Shop = () => {
 </p>
 
 </div>
+
 <div className={Styles.para}>
 
 <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
 </div>
 </div>
-<Footer />
   </>
-  
-  )
-}
+      
+     )
+      
+  }
 
 export default Shop
