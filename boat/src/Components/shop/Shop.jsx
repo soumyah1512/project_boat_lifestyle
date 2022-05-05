@@ -1,9 +1,9 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
 import ProductsArray from "../../ProductData/Productdata"
-// import { Footer } from '../Footer'
+import { Footer } from '../Footer'
 import Styles from './Shop.module.css'
-// import { Navbar } from '../Navbar/Navbar'
+import { Navbar } from '../Navbar/Navbar'
 
 
 const Shop = () => {
