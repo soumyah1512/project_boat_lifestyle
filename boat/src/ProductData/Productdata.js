@@ -13,6 +13,8 @@ const ProductsArray =[
       mrp:  2990,
       color: "6 colors available"
   },
+
+
   { id : 3,
     image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/32011675-2ad8-4b99-9787-895caf201d28_300x.png?v=1642405569",
       title: "boAt Airdopes 131",
