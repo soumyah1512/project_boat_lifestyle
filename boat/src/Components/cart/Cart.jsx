@@ -1,10 +1,11 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
+import "./Cart.css"
 
 const Cart = () => {
   const {
     isEmpty,
-    totalUniqueItems,
+    // totalUniqueItems,
     items,
     totalItems,
     cartTotal,
@@ -12,55 +13,104 @@ const Cart = () => {
     removeItem,
     emptyCart,
   } = useCart();
-  if(isEmpty) return <h1>Your Cart is Empty</h1>
+  if(isEmpty) return <h1 className='cartEmpty'>Your Cart is Empty</h1>
   return (
-   
+   <div className='container'>
     <div>
       <div>
-        <h5>Cart({totalUniqueItems}) total Items: ({totalItems}) </h5>
+            <div className='countDiv'>
+                <div>
+                  <h5>Total Price: {cartTotal}</h5>
+                </div>
+                <div>
+                  <h5>total Items: ({totalItems}) </h5>
+                </div>
+            </div>
         {items.map((product, index)=>{
           return(
-            <div>
-              <span key={index}></span>
+           
+          <div key={index} className='mapDiv'>
           <div>
           <img src={product.image} alt="" />
           </div>
           <div>
-          <h3>{product.title}</h3>
-          </div>
-          <div>
-          <p>₹{product.price}</p>
-          </div>
-          <div>
-          <p>₹{product.mrp}</p>
-          </div>
-          <div>
-          <p>{product.color}</p>
-          </div>
-          <div>
+          <h2>{product.title}</h2>
+          
+          <h5>₹{product.price}</h5>
+          
           <p>Quantity: ({product.quantity})</p>
-          </div>
-          <div>
-            <button onClick={()=>updateItemQuantity(product.id, product.quantity -1)}>-</button>
-            <button onClick={()=>updateItemQuantity(product.id, product.quantity +1)}>+</button>
-          </div>
-          <div>
-          <button onClick={()=>removeItem(product.id)}>Remove Item</button>
+          <div className='btndiv'>
+            <button className='minus' onClick={()=>updateItemQuantity(product.id, product.quantity -1)}>-</button>
+            <button className='add' onClick={()=>updateItemQuantity(product.id, product.quantity +1)}>+</button>
+            </div>
+          <button className='remove' onClick={()=>removeItem(product.id)}>Remove Item</button>
           </div>
           
             </div>
           )
           
         })}
-        <div>
-            <h2>Total Price: {cartTotal}</h2>
-        </div>
-        <div>
-          <button onClick={()=>emptyCart()}>Clear Card</button>
+        
+        <div className='clearBtnDiv'>
+          <button className='clearBtn' onClick={()=>emptyCart()}>Clear Items</button>
         </div>
       </div>
       </div>
-      
+      <div className='infoDiv'>
+        <div>
+        <h2>Contact Information</h2>
+        </div>
+        <div>
+        <input type="text" placeholder='Email' />
+        </div>
+        <div>
+        <p><input type="checkbox"></input> Keep me updated on my order status over email and whatsapp </p>
+        </div>
+        <div>
+          <h4>
+            Shipping Address
+          </h4>
+        </div>
+        <div>
+          <input type="text" placeholder='First Name'/>
+          <input type="text" placeholder='Last Name' />
+        </div>
+        <div>
+          <input type="text" placeholder='Address' />
+        </div>
+        <div>
+        <input type="text" placeholder='Apartment, Suite, etc.' />
+        </div>
+        <div>
+        <input type="text"  placeholder='City' />
+        </div>
+        <div>
+          <select>
+          <option value="">Select State</option>
+            <option value="">Delhi</option>
+            <option value="">Maharashtra</option>
+            <option value="">Bangalore</option>
+            <option value="">Chennai</option>
+          </select>
+          <input type="text" placeholder='Pincode' />
+        </div>
+        <div>
+          <h2>Payment Options</h2>
+        </div>
+        <div>
+        <select>
+            <option value="">Choose Payment Method</option>
+            <option value="cd">Cardit Card</option>
+            <option value="db">Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="cod">COD</option>
+          </select>
+        </div>
+        <div>
+          <button className='ptp'>Proceed To Pay</button>
+        </div>
+      </div>
+      </div>
   )
 }
 

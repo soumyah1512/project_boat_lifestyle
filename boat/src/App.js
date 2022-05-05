@@ -13,7 +13,7 @@ function App() {
       <div>
         <h1>sdaf</h1>
         <MainR/>
-        <MainRoutes/>
+        {/* <MainRoutes/> */}
         {/* <Thanks/> */}
       </div>)
 
