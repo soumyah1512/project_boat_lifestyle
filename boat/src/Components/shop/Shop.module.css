@@ -1,0 +1,99 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    justify-content: space-evenly;
+    line-height: 0px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.innercon{
+    border:  1px solid black;
+    border-radius: 10px;
+    background-color:gainsboro;
+    margin-top: 0%;
+
+}
+
+.imgpic{
+    height: 400px;
+    width: 100%;
+}
+
+.con{
+    position: relative;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: aliceblue;
+  }
+ 
+  .midshops{
+   
+    border: 1px solid black;
+    background-color: #252525;
+    margin-top: -4px;
+}
+
+  .midshop{
+      margin-left: 50px;
+      color: aliceblue;
+      font-size: 45px;
+  }
+
+  .datadd{
+      
+      margin-left: 200px;
+      margin-right: 200px;
+      color: #757575;
+      
+  }
+
+  .para{
+      text-align: center;
+      /* margin-left: 200px;
+      margin-right: 200px; */
+      color: #757575;
+      background-color: #2c2c2c;
+      height: 90px;
+      padding-top: 20px;
+  }
+  .para>p{
+        margin-left: 200px;
+      margin-right: 200px;
+  }
+
+
+  .smallcon{
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 2px 2px 2px 2px;
+      background-color: aliceblue;
+      /* margin-left: 50px; */
+      padding-left:50px;
+  }
+
+  .flexf{
+      display: flex;
+      justify-content: space-evenly;
+      /* border: 1px solid black; */
+
+  }
+
+  .flexff{
+    display: flex;
+    gap :20px
+    
+}
+.adata{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: red;
+    color: aliceblue;
+    margin-left: 30px;
+}
