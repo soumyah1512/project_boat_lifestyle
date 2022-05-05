@@ -13,6 +13,10 @@
 .countDiv{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: red;
+    font-size: 20px;
 }
 .mapDiv{
     border: 1px solid;
@@ -86,6 +90,7 @@ margin-top: 2%;
     border: 1px solid;
     width: 100%;
     padding-left: 5%;
+    padding-top: 2%;
     background-color: rgb(184, 178, 178);
 
 }
@@ -105,15 +110,24 @@ margin-top: 2%;
 }
 
 .ptp{
-    margin-top: 2%;
+    margin-top: 5%;
     height: 50px;
     width: 250px;
     background-color: blue;
     color: white;
     border-radius: 12px;
 }
+.ptp:hover{
+border: white;
+font-size: 20px;
+background: rgb(24, 24, 112);
+}
 .cartEmpty{
     text-align: center;
     color: rgb(240, 16, 16);
     background: rgba(255, 255, 0, 0.664);
+}
+.paymentSection{
+    margin-top: 2%;
+    color: blue;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {v4 as uuid} from "uuid";
 
 export const Thanks = ()=>{
@@ -9,7 +10,7 @@ export const Thanks = ()=>{
                 <h1 style={{color:"teal"}}>You're all set!</h1>
                 <p>Your Order ID : #{uuid()}</p>
                 <p style={{fontSize:"30px",color:"green"}}><b>Thanks for being Awesome,<br></br>We hope you enjoyed your purchase!</b></p>
-                <button style={{borderRadius:"20px",backgroundColor:"blue",color:"white",fontSize:"25px",padding:"10px"}}>Go To Home</button>
+               <Link to="/"> <button style={{borderRadius:"20px",backgroundColor:"blue",color:"white",fontSize:"25px",padding:"10px"}}>Go To Home</button></Link>
             </div>
         </>
     )

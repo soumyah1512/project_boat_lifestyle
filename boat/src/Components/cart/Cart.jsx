@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
 import "./Cart.css"
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   const {
@@ -94,7 +95,7 @@ const Cart = () => {
           </select>
           <input type="text" placeholder='Pincode' />
         </div>
-        <div>
+        <div className='paymentSection'>
           <h2>Payment Options</h2>
         </div>
         <div>
@@ -107,7 +108,7 @@ const Cart = () => {
           </select>
         </div>
         <div>
-          <button className='ptp'>Proceed To Pay</button>
+         <Link to="/paymentdone"> <button className='ptp'>Proceed To Pay</button></Link>
         </div>
       </div>
       </div>

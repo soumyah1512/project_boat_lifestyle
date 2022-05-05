@@ -119,11 +119,11 @@ export const Collection = () => {
 export const SearchResults = () => {
     return (
         <SearchResult className="search-results">
-            <span>Airdopes</span>
-            <span>Boat Speakers</span>
-            <span>Handfree</span>
-            <span>Noice Cancelling</span>
-            <span>TWS</span>
+          <Link to="/shop"><span style={{color:"white"}}>Airdopes</span></Link>
+          <Link to="/shop"> <span style={{color:"white"}}>Boat Speakers</span></Link>
+          <Link to="/shop"><span style={{color:"white"}}>Handfree</span></Link>
+          <Link to="/shop"> <span style={{color:"white"}}>Noise Cancelling</span></Link>
+          <Link to="/shop"> <span style={{color:"white"}}>TWS</span></Link>
         </SearchResult>
     );
 };
