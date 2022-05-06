@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 2%;
+    background-color: rgba(0, 0, 0, 0.459);
 
 }
 
@@ -16,7 +17,7 @@
     margin-bottom: 2%;
     margin-top: 2%;
     color: red;
-    font-size: 20px;
+    font-size: 24px;
 }
 .mapDiv{
     border: 1px solid;
@@ -26,6 +27,8 @@
     justify-content: space-around;
     border-radius: 12px;
     background-color: rgb(184, 178, 178);
+    padding: 1%;
+    
 }
 .mapDiv img{
     height: 120px;
@@ -92,6 +95,8 @@ margin-top: 2%;
     padding-left: 5%;
     padding-top: 2%;
     background-color: rgb(184, 178, 178);
+    background-color: rgb(141, 17, 17);
+    color: white;
 
 }
 .infoDiv input, select,h4,p{
@@ -99,8 +104,8 @@ margin-top: 2%;
     margin-left: 1%;
 }
 .infoDiv input{
-    width: 200px;
-    height: 25px;
+    width: 300px;
+    height: 30px;
     text-align: center;
 }
 .infoDiv select{
@@ -116,6 +121,9 @@ margin-top: 2%;
     background-color: blue;
     color: white;
     border-radius: 12px;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 18px;
 }
 .ptp:hover{
 border: white;
