@@ -42,11 +42,11 @@ const Shop = () => {
                 
                 <div className={Styles.flexff}>
                <div>
-                <p style={{color:'red', fontWeight:'650'}}>₹ {product.price}</p>
+                <p style={{color:'red', fontWeight:'650'}}>₹{product.price}</p>
                </div>
 
                <div >
-                <p >₹ <s>{product.mrp}</s></p>
+                <p >₹<s>{product.mrp}</s></p>
               </div>
 
                 </div>
