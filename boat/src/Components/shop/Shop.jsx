@@ -1,19 +1,11 @@
 import React from 'react'
 import { useCart } from 'react-use-cart'
 import ProductsArray from "../../ProductData/Productdata"
-// import { Footer } from '../Footer'
 import Styles from './Shop.module.css'
-// import { Navbar } from '../Navbar/Navbar'
-
-
-const Shop = () => {
+const Shop = () => { 
 
   const{addItem}= useCart();
   
-  
-
- 
-
   return (
   <>
      
@@ -21,8 +13,22 @@ const Shop = () => {
       <img className={Styles.imgpic} src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Catgry-web_7cf20899-eb4a-427f-9a8a-799d7e1c37fa.jpg?v=1634716734" alt="" />
       <div className={Styles.topleft}>Home/ Wireless Earbuds</div>
       </div>
-   
-
+      
+      <div className={Styles.sortDiv}>
+        <div>
+          <h2>Sort By</h2>
+        </div>
+        <div>
+        
+        <select>
+          <option value="Featured">Featured</option>
+          <option value="A-Z">Alphabetically, A-Z</option>
+          <option value="Z-A">Alphabetically, Z-A</option>
+          <option value="l2h">Price, low to high</option>
+          <option value="h2l">Price, high to low</option>
+        </select>
+        </div>
+      </div>
     <div className={Styles.midshops}>
     <h1 className={Styles.midshop}>Wireless Earbuds</h1>
     <div className={Styles.container} >
