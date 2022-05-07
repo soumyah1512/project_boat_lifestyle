@@ -2,10 +2,17 @@ import React from 'react'
 import { useCart } from 'react-use-cart'
 import ProductsArray from "../../ProductData/Productdata"
 import Styles from './Shop.module.css'
+// import React, { useState, useEffect } from 'react';?
+import { useState } from 'react'
+import { useEffect } from 'react'
 const Shop = () => { 
 
   const{addItem}= useCart();
   
+  
+  
+ 
+
   return (
   <>
      
@@ -14,23 +21,44 @@ const Shop = () => {
       <div className={Styles.topleft}>Home/ Wireless Earbuds</div>
       </div>
       
-      <div className={Styles.sortDiv}>
-        <div>
-          <h2>Sort By</h2>
-        </div>
-        <div>
-        
-        <select>
+     
+    <div className={Styles.midshops}>
+    <h1 className={Styles.midshop}>Wireless Earbuds</h1>
+
+          {/* // sort data  */}
+
+          <div className={Styles.sort} >
+            <div className={Styles.sort} >
+                
+                <div>
+
+        <select style={{ backgroundColor:' #252525',color:'white'}}>
+          <option value="Show filters" style={{ backgroundColor:' #252525'}}>Show filters</option>
+          <option value="low to high">Low to High</option>
+          <option value="high to low">High to Low</option>
+         
+        </select>
+                   
+                  
+                   
+                </div>
+                
+                <div>
+                  <p>42 products</p>
+                </div>
+            </div >
+            <div style={{ paddingTop:'40px'}}>
+            
+          <select style={{ width:'200px', backgroundColor:' #252525',color:'white'}}>
           <option value="Featured">Featured</option>
           <option value="A-Z">Alphabetically, A-Z</option>
           <option value="Z-A">Alphabetically, Z-A</option>
           <option value="l2h">Price, low to high</option>
           <option value="h2l">Price, high to low</option>
         </select>
-        </div>
-      </div>
-    <div className={Styles.midshops}>
-    <h1 className={Styles.midshop}>Wireless Earbuds</h1>
+            </div>
+          </div>
+
     <div className={Styles.container} >
 
        {ProductsArray.map((product,index)=>{
@@ -52,7 +80,7 @@ const Shop = () => {
                </div>
 
                <div >
-                <p >₹<s>{product.mrp}</s></p>
+                <p style={{width:'100px'}}>₹<s>{product.mrp}</s></p>
               </div>
 
                 </div>
