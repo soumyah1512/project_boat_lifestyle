@@ -16,8 +16,6 @@ function App() {
         <MainRoutes/>
         {/* <Thanks/> */}
       </div>)
-
-
 }
 
 export default App;
