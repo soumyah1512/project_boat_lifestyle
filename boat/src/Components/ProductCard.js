@@ -1,13 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const CardContainer = styled.div`
-    width: 400px;
-    height: 371px;
-    border-radius: 8px;
-    cursor: pointer;
-    position: relative;
-`;
+
 
 const InnerImgContainer = styled.div`
     width: 400px;
@@ -102,6 +96,13 @@ const CardData = styled.div`
         font-style: normal;
         font-weight: 100;
     }
+    p{
+        color: black;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none!important;
+    }
 `;
 
 const CardShopNowButton = styled.button`
@@ -129,18 +130,27 @@ const CardShopNowButton = styled.button`
     }
 `;
 
+const CardContainer = styled.div`
+    width: 400px;
+    height: 371px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid grey;
+`;
+
 export const ProductCard = ({ el }) => {
     const imageFlag = el.image.length > 1 ? true : false;
 
     return (
-        <Link to={`/products/${el.name}`}>
+        <Link to={`/products/${el.name}`} style={{textDecoration: 'none'}}>
             <CardContainer>
                 <InnerImgContainer>
                     <img src={el.image[0]} alt="img" />
                     {imageFlag ? <img src={el.image[1]} alt="img" /> : true}
                 </InnerImgContainer>
                 <CardData>
-                    <p className="product-title">{el.name}</p>
+                    <p className="product-title" style={{fontWeight: '700'}}>{el.name}</p>
                     <p className="product-price">
                         Rs.
                         {(

@@ -127,8 +127,8 @@ export function ComplexSlider() {
     ];
 
     return (
-        <Container>
-            <div className="category">
+        <Container style={{textDecoration: 'none'}}>
+            <div className="category" >
                 <span>Best sellers</span>
                 <span>Trending in Earbuds</span>
                 <span>Top Smart Watches</span>
@@ -136,7 +136,7 @@ export function ComplexSlider() {
                 <span>Top Wireless</span>
                 <span>Top Wired</span>
             </div>
-            <div className="data-grid">
+            <div className="data-grid" >
                 {temp.map((el) => (
                     <ProductCard key={el.id} el={el}></ProductCard>
                 ))}
