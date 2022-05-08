@@ -8,6 +8,7 @@ import { Login } from '../Components/Login'
 import { Register } from '../Components/Register'
 import Shop from '../Components/shop/Shop'
 import { CartProvider } from 'react-use-cart'
+import { Thanks } from '../Components/Thanks'
 
 const MainR = () => {
   return (
@@ -19,6 +20,7 @@ const MainR = () => {
             <Route path="/account/register" element={<Register/>}/>
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/shop" element={<Shop/>}/>
+            <Route path='/paymentdone' element={<Thanks/>}/>
         </Routes>
         <Footer/>
         </CartProvider>
