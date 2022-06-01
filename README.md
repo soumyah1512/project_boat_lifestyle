@@ -18,6 +18,30 @@
 
 ## Important Links
 <a href="https://tangerine-sunshine-7e926e.netlify.app/">Netlify Deployment</a>
+### <u>Run Locally</u>
+
+Clone the project
+
+```
+git clone (https://github.com/soumyah1512/project_boat_lifestyle)
+```
+
+Install npm packages
+
+```
+npm install
+```
+
+Run the server
+
+```
+npm start
+```
+
+View in Browser
+
+```
+go to http://localhost:3000
 
 <h1>Home Page</h1>
 
