@@ -16,6 +16,9 @@
 • HTML <br>
 • CSS <br>
 
+## Important Links
+<a href="https://tangerine-sunshine-7e926e.netlify.app/">Netlify Deployment</a>
+
 <h1>Home Page</h1>
 
 <br>
