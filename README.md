@@ -18,6 +18,7 @@
 
 ## Important Links
 <a href="https://tangerine-sunshine-7e926e.netlify.app/">Netlify Deployment</a>
+
 ### <u>Run Locally</u>
 
 Clone the project
